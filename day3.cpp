@@ -136,23 +136,38 @@
 //     }
 // }
 
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+//     int n;
+//     cout<<"n :";
+//     cin>>n;
+//     int original=n;
+//     int reverse=0;
+//     while(n>0){
+//         int digit=n%10;
+//         reverse=reverse*10+digit;
+//         n=n/10;
+//     }
+//     if(original==reverse){
+//         cout<<"palindrome";
+//     }else{
+//         cout<<"not palindrome";
+//     }
+// }
+// fibonacci using for loop
 #include<iostream>
 using namespace std;
-
 int main(){
     int n;
     cout<<"n :";
     cin>>n;
-    int original=n;
-    int reverse=0;
-    while(n>0){
-        int digit=n%10;
-        reverse=reverse*10+digit;
-        n=n/10;
-    }
-    if(original==reverse){
-        cout<<"palindrome";
-    }else{
-        cout<<"not palindrome";
+    int a=0,b=1;
+    for(int i=1;i<=n;i++){
+        cout<<a<<" ";
+        int next=a+b;
+        a=b;
+        b=next;
     }
 }
