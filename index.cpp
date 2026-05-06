@@ -1,0 +1,2 @@
+// print natural numver
+
