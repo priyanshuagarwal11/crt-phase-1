@@ -66,7 +66,7 @@ class Student{
 int main(){
     Student s1("Priyanshu",1,85);
    s1.setMarks(95).displayReportCard();
-   s1.setName("Priyanshu Agarwal").setMarks(90).displayReportCard();
+   s1.setName("Priyanshu Agarwrivtaeal").setMarks(90).displayReportCard();
    Student s2 = s1;
 
     cout << "\nCopied Student Data:";
